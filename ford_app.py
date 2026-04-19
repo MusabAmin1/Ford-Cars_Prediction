@@ -66,7 +66,7 @@ st.write("Fill details to predict car price")
 # numeric inputs (SLIDERS / DRAGGABLE)
 
 year = st.slider("Year", min_value=1990, max_value=2026, value=2015, step=1)
-mileage = st.slider("Mileage", min_value=0, max_value=300000, value=50000, step=1000)
+mileage = st.number_input("Mileage", min_value=0, max_value=300000, value=50000, step=200)
 tax = st.slider("Tax", min_value=0, max_value=1000, value=150, step=10)
 mpg = st.slider("MPG", min_value=0.0, max_value=100.0, value=50.0, step=0.5)
 engineSize = st.slider("Engine Size", min_value=0.0, max_value=6.0, value=1.5, step=0.1)
